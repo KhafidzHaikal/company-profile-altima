@@ -22,7 +22,7 @@ const lilyFont = Lily_Script_One({
 
 export default function Home() {
 	return (
-		<main className="mt-12 lg:mt-0">
+		<main className="mt-20 lg:mt-0">
 			<Navbar />
 			<section className="h-screen flex items-center mt-2 sm:mt-0 mx-12 lg:mx-32">
 				<div className="md:flex justify-between items-center gap-4">
@@ -86,7 +86,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="mx-12 lg:mx-32">
-				<Carousel className="-mt-12 overflow-hidden p-2">
+				<Carousel className="-mt-12 overflow-hidden">
 					<CarouselContent>
 						<CarouselItem className="sm:basis-1/2 md:basis-1/3 xl:basis-1/4 p-0 ml-4">
 							<div className="relative h-[400px] rounded-[30px] overflow-hidden shadow-md border-4 border-white">
@@ -281,7 +281,7 @@ export default function Home() {
 					</p>
 				</div>
 				<Link href={""}>
-					<Button className=" rounded-md py-4 flex items-center gap-2 mx-auto bg-transparent bg-white text-[#112A90] border border-[#112A90] hover:bg-[#112A90] hover:text-white hover:border-white cursor-pointer w-full md:w-auto">
+					<Button className="rounded-md py-4 flex items-center gap-2 mx-auto bg-white text-[#112A90] border border-[#112A90] hover:bg-[#112A90] hover:text-white hover:border-white cursor-pointer w-full md:w-auto">
 						Hubungi Kami
 						<FaWhatsapp className="text-md" />
 					</Button>
