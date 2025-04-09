@@ -15,7 +15,7 @@ const Footer = () => {
 		<footer className="px-6 py-12">
 			<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
 				<div className="w-full">
-					<h2 className={`${lilyFont.className} text-2xl text-[#112A90]`}>
+					<h2 className={`${lilyFont.className} text-2xl text-[#112A90] dark:text-white`}>
 						Petualangan Selanjutnya Menanti Masukkan email Anda untuk
 						mendapatkan informasi terbaru!
 					</h2>
@@ -32,9 +32,10 @@ const Footer = () => {
 
 					<p className="text-sm">
 						<span
-							className={`${lilyFont.className} text-[#112A90] font-semibold`}>
+							className={`${lilyFont.className} text-[#112A90] dark:text-white font-semibold`}>
 							Alamat Kantor:
 						</span>{" "}
+						<br />
 						Jl. Lap. Tembak No.4, RT.1/RW.11, Cibubur, Kec. Ciracas, Kota
 						Jakarta Timur, Daerah Khusus Ibukota Jakarta 13720
 					</p>
@@ -42,7 +43,7 @@ const Footer = () => {
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 					<div>
 						<h3
-							className={`${lilyFont.className} text-[#112A90] font-semibold mb-2`}>
+							className={`${lilyFont.className} text-[#112A90] dark:text-white font-semibold mb-2`}>
 							Destinasi
 						</h3>
 						<ul className="space-y-1">
@@ -53,7 +54,7 @@ const Footer = () => {
 
 					<div>
 						<h3
-							className={`${lilyFont.className} text-[#112A90] font-semibold mb-2`}>
+							className={`${lilyFont.className} text-[#112A90] dark:text-white font-semibold mb-2`}>
 							Portfolio
 						</h3>
 						<ul className="space-y-1">
@@ -64,7 +65,7 @@ const Footer = () => {
 
 					<div>
 						<h3
-							className={`${lilyFont.className} text-[#112A90] font-semibold mb-2`}>
+							className={`${lilyFont.className} text-[#112A90] dark:text-white font-semibold mb-2`}>
 							Social Media
 						</h3>
 						<div className="flex gap-4 text-2xl mt-2">

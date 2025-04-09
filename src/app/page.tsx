@@ -27,7 +27,7 @@ export default function Home() {
 			<section className="h-screen flex items-center mt-2 sm:mt-0 mx-12 lg:mx-32">
 				<div className="md:flex justify-between items-center gap-4">
 					<div className="">
-						<div className="text-[#112A90] flex items-center mb-4">
+						<div className="text-[#112A90] dark:text-white flex items-center mb-4">
 							<BiSolidPlaneAlt className="text-xl" />
 							<GoDash className="text-xl" />
 							<p className="text-sm font-medium">Yuk, Mulai Petualangan!</p>
@@ -41,7 +41,7 @@ export default function Home() {
 							dan destinasi eksklusif.
 						</p>
 						<Link href={""}>
-							<Button className=" rounded-md py-4 flex items-center gap-2 mx-auto sm:mx-0 bg-transparent text-[#112A90] border border-[#112A90] hover:bg-[#112A90] hover:text-white cursor-pointer w-full md:w-auto">
+							<Button className=" rounded-md py-4 flex items-center gap-2 mx-auto sm:mx-0 bg-transparent text-[#112A90] dark:text-white dark:hover:text-[#112A90] dark:border-white dark:hover:bg-white border border-[#112A90] hover:bg-[#112A90] hover:text-white cursor-pointer w-full md:w-auto">
 								Hubungi Kami
 								<FaWhatsapp className="text-md" />
 							</Button>
@@ -206,7 +206,7 @@ export default function Home() {
 			</section>
 			<section className="mx-12 lg:mx-32 mt-12">
 				<div className="mt-12 text-right">
-					<div className="text-[#112A90] flex items-center mb-4 justify-end">
+					<div className="text-[#112A90] dark:text-white flex items-center mb-4 justify-end">
 						<p className="text-sm font-medium">Portofolio</p>
 						<GoDash className="text-xl" />
 					</div>
