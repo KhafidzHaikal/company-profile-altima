@@ -21,6 +21,16 @@ const components: { title: string; href: string; description: string }[] = [
 		href: "/destination",
 		description: "Destination",
 	},
+	{
+		title: "Abu Dhabi",
+		href: "/destination/abu-dhabi",
+		description: "Destination",
+	},
+	{
+		title: "Dubai",
+		href: "/destination/dubai",
+		description: "Destination",
+	},
 ];
 
 const Navbar = () => {
