@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { ArrowRight } from "lucide-react";
 import { Lily_Script_One } from "next/font/google";
+import { useState } from "react";
+import { toast } from "react-hot-toast";
 
 const lilyFont = Lily_Script_One({
 	subsets: ["latin"],
@@ -11,11 +14,44 @@ const lilyFont = Lily_Script_One({
 });
 
 const Footer = () => {
+	const [email, setEmail] = useState("");
+	const [loading, setLoading] = useState(false);
+	const [success, setSuccess] = useState(false);
+	const [error, setError] = useState(false);
+
+	const handleSubmit = async () => {
+		if (!email) {
+			toast.error("Please enter an email");
+			return;
+		}
+
+		const sendEmail = async () => {
+			const res = await fetch("/api/send-email", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({ email }),
+			});
+
+			await new Promise((resolve) => setTimeout(resolve, 1000));
+
+			if (!res.ok) {
+				throw new Error("Failed to send");
+			}
+			setEmail("");
+		};
+
+		toast.promise(sendEmail(), {
+			loading: "Sending email...",
+			success: "Email sent successfully!",
+			error: "Failed to send email. Try again.",
+		});
+	};
 	return (
 		<footer className="px-6 py-12">
 			<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
 				<div className="w-full">
-					<h2 className={`${lilyFont.className} text-2xl text-[#112A90] dark:text-white`}>
+					<h2
+						className={`${lilyFont.className} text-2xl text-[#112A90] dark:text-white`}>
 						Petualangan Selanjutnya Menanti Masukkan email Anda untuk
 						mendapatkan informasi terbaru!
 					</h2>
@@ -23,9 +59,14 @@ const Footer = () => {
 						<input
 							type="email"
 							placeholder="Masukkan Email"
+							value={email}
+							onChange={(e) => setEmail(e.target.value)}
 							className="px-4 py-2 w-full md:w-3/4 text-md rounded-l-md border border-black dark:border-white dark:bg-white"
 						/>
-						<button className="bg-transparent border border-black dark:border-white px-4 py-2 rounded-r-md hover:bg-white hover:text-black transition">
+						<button
+							onClick={handleSubmit}
+							disabled={loading}
+							className="bg-transparent border border-black dark:border-white px-4 py-2 rounded-r-md hover:bg-white hover:text-black transition">
 							<ArrowRight />
 						</button>
 					</div>
