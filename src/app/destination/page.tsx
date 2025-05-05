@@ -26,9 +26,8 @@ export default function DestinationPage() {
 						Destinasi Wisata Menanti untuk Anda Kunjungi
 					</p>
 					<p className="text-[#4C5E70] mt-2 mb-4 lg:mb-8 text-sm">
-						Kami menyediakan destinasi wisata ke Abu Dhabi dan Dubai untuk anda
-						yang ingin merasakan pengalaman yang luar biasa di negara Timur
-						Tengah.
+						Kami menyediakan destinasi wisata ke kota besar di Indonesia untuk anda
+						yang ingin merasakan pengalaman yang luar biasa diberbagai kota besar Indonesia.
 					</p>
 				</div>
 			</section>
@@ -37,25 +36,25 @@ export default function DestinationPage() {
 					{/* Abu Dhabi */}
 					<div className="relative inline-block overflow-hidden rounded-xl group">
 						<Image
-							src="/images/abu-dhabi-poto.png"
+							src="/images/bali.jpg"
 							width={0}
 							height={0}
 							sizes="100vh"
-							alt="Abu Dhabi"
+							alt="Bali"
 							className="rounded-xl object-fit hover:scale-110 duration-500 transition-transform w-[600px] h-[200px] sm:h-[400px]"
 						/>
 						<div className="absolute inset-0 flex items-center justify-center">
-							<Link href={"/destination/abu-dhabi"}>
+							<Link href={"/destination/indonesia"}>
 								<span
 									className={`${lilyFont.className} cursor-pointer text-white px-4 py-2 rounded-md flex items-center gap-2 font-semibold text-2xl lg:text-4xl transition-colors duration-300`}>
-									Abu Dhabi
+									Indonesia
 								</span>
 							</Link>
 						</div>
 					</div>
 
 					{/* Dubai */}
-					<div className="relative inline-block overflow-hidden rounded-xl group">
+					{/* <div className="relative inline-block overflow-hidden rounded-xl group">
 						<Image
 							src="/images/dubai-poto.png"
 							width={0}
@@ -72,7 +71,7 @@ export default function DestinationPage() {
 								</span>
 							</Link>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</section>
 			<Footer />

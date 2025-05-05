@@ -48,7 +48,7 @@ export function HumburgerButton() {
               Home
             </Link>
             <Link
-              href="/"
+              href="/package"
               className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               Paket

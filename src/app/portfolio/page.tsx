@@ -22,15 +22,15 @@ export default function PortfolioPage() {
 						<p className="text-sm font-medium">Detail Destinasi</p>
 					</div>
 					<p className={`${lilyFont.className} text-2xl md:text-4xl`}>
-						Abu Dhabi
+						Indonesia
 					</p>
 					<p className="text-[#4C5E70] mt-2 mb-4 lg:mb-8 text-sm">
-						Abu Dhabi adalah ibu kota Uni Emirat Arab (UEA) dan merupakan kota
-						terbesar kedua setelah Dubai. Terletak di sebuah pulau di Teluk
-						Persia, kota ini dikenal sebagai pusat pemerintahan, budaya, dan
-						ekonomi negara. Abu Dhabi menawarkan perpaduan menarik antara
-						arsitektur modern, kekayaan budaya Islam, dan keindahan alam gurun
-						serta pesisir.
+						Indonesia adalah negara kepulauan yang kaya akan budaya, sejarah,
+						dan keindahan alam. Dari pantai tropis Bali, gunung-gunung berapi
+						yang memukau di Yogyakarta, hingga hutan tropis di Sumatra,
+						Indonesia menawarkan berbagai destinasi wisata yang mempesona.
+						Negara ini juga terkenal dengan keramahannya, kuliner yang menggugah
+						selera, dan warisan budaya yang sangat kaya.
 					</p>
 				</div>
 				<PortfolioCard />

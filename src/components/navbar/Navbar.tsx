@@ -22,15 +22,15 @@ const components: { title: string; href: string; description: string }[] = [
 		description: "Destination",
 	},
 	{
-		title: "Abu Dhabi",
-		href: "/destination/abu-dhabi",
+		title: "Indonesia",
+		href: "/destination/indonesia",
 		description: "Destination",
-	},
-	{
-		title: "Dubai",
-		href: "/destination/dubai",
-		description: "Destination",
-	},
+	}
+	// {
+	// 	title: "Dubai",
+	// 	href: "/destination/dubai",
+	// 	description: "Destination",
+	// },
 ];
 
 const Navbar = () => {

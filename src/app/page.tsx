@@ -36,7 +36,7 @@ export default function Home() {
 							Liburan Tanpa Ribet Kenangan Sepanjang Hidup
 						</p>
 						<p className="text-[#4C5E70] my-4 text-sm">
-							Nikmati pengalaman liburan ke Abu Dhabi atau Dubai tanpa repot!
+							Nikmati pengalaman liburan di Indonesia tanpa repot!
 							Kami siap merancang perjalanan impian Anda dengan layanan terbaik
 							dan destinasi eksklusif.
 						</p>
@@ -49,11 +49,11 @@ export default function Home() {
 					</div>
 					<div className="md:w-1/2 mt-4 md:mt-0">
 						<Image
-							src="/images/jumbotron-poto.png"
+							src="/images/jumbotron-poto-1.png"
 							alt="Altima Logo"
 							width={0}
 							height={0}
-							className="h-full w-full"
+							className="h-full w-full rounded-2xl"
 							sizes="100vh"
 							priority
 						/>
@@ -106,14 +106,14 @@ export default function Home() {
 						<CarouselItem className="sm:basis-1/2 md:basis-1/3 xl:basis-1/4 p-0 ml-4">
 							<div className="relative h-[400px] rounded-[30px] overflow-hidden shadow-md border-4 border-white">
 								<Image
-									src="/images/altima-foto-1.png"
+									src="/images/kuliner.jpg"
 									alt="Mosque"
 									fill
 									className="object-cover"
 								/>
 								<div className="absolute inset-0 bg-black/30 flex items-center justify-center">
 									<h3 className={`${lilyFont.className} text-white text-3xl`}>
-										Keluarga
+										Kuliner
 									</h3>
 								</div>
 							</div>
@@ -121,14 +121,14 @@ export default function Home() {
 						<CarouselItem className="sm:basis-1/2 md:basis-1/3 xl:basis-1/4 p-0 ml-4">
 							<div className="relative h-[400px] rounded-[30px] overflow-hidden shadow-md border-4 border-white">
 								<Image
-									src="/images/altima-foto-1.png"
+									src="/images/hiburan.jpg"
 									alt="Mosque"
 									fill
 									className="object-cover"
 								/>
 								<div className="absolute inset-0 bg-black/30 flex items-center justify-center">
 									<h3 className={`${lilyFont.className} text-white text-3xl`}>
-										Keluarga
+										Hiburan
 									</h3>
 								</div>
 							</div>
@@ -136,14 +136,14 @@ export default function Home() {
 						<CarouselItem className="sm:basis-1/2 md:basis-1/3 xl:basis-1/4 p-0 ml-4">
 							<div className="relative h-[400px] rounded-[30px] overflow-hidden shadow-md border-4 border-white">
 								<Image
-									src="/images/altima-foto-1.png"
+									src="/images/meditasi.png"
 									alt="Mosque"
 									fill
 									className="object-cover"
 								/>
 								<div className="absolute inset-0 bg-black/30 flex items-center justify-center">
 									<h3 className={`${lilyFont.className} text-white text-3xl`}>
-										Keluarga
+										Meditasi
 									</h3>
 								</div>
 							</div>
@@ -169,23 +169,23 @@ export default function Home() {
 						{/* Abu Dhabi */}
 						<div className="relative inline-block overflow-hidden rounded-xl group">
 							<Image
-								src="/images/abu-dhabi-poto.png"
+								src="/images/bali.jpg"
 								width={0}
 								height={0}
 								sizes="100vh"
-								alt="Abu Dhabi"
+								alt="Indonesia"
 								className="rounded-xl object-fit hover:scale-110 duration-500 transition-transform w-[600px] h-[200px] sm:h-[400px]"
 							/>
 							<div className="absolute inset-0 flex items-center justify-center">
 								<span
 									className={`${lilyFont.className} text-white px-4 py-2 rounded-md flex items-center gap-2 font-semibold text-2xl lg:text-4xl transition-colors duration-300`}>
-									Abu Dhabi <IoArrowRedoOutline size={16} />
+									Indonesia <IoArrowRedoOutline size={16} />
 								</span>
 							</div>
 						</div>
 
 						{/* Dubai */}
-						<div className="relative inline-block overflow-hidden rounded-xl group">
+						{/* <div className="relative inline-block overflow-hidden rounded-xl group">
 							<Image
 								src="/images/dubai-poto.png"
 								width={0}
@@ -200,7 +200,7 @@ export default function Home() {
 									Dubai <IoArrowRedoOutline size={16} />
 								</span>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>

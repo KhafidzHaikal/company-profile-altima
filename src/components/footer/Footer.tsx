@@ -88,8 +88,7 @@ const Footer = () => {
 							Destinasi
 						</h3>
 						<ul className="space-y-1">
-							<li>Abu Dhabi</li>
-							<li>Dubai</li>
+							<li>Indonesia</li>
 						</ul>
 					</div>
 
@@ -99,8 +98,7 @@ const Footer = () => {
 							Portfolio
 						</h3>
 						<ul className="space-y-1">
-							<li>Abu Dhabi Travel Pic</li>
-							<li>Dubai Travel Pic</li>
+							<li>Indonesia Travel Pic</li>
 						</ul>
 					</div>
 
