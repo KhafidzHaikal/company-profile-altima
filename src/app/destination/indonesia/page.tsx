@@ -36,7 +36,7 @@ export default function DubaiPage() {
 						liburan santai, tur ini dirancang khusus agar Anda bisa merasakan
 						keanekaragaman budaya Indonesia dalam satu perjalanan.
 					</p>
-					<Link href={""}>
+					<Link href={"https://wa.me/6281388266868"}>
 						<Button className=" rounded-md py-4 flex items-center gap-2 bg-white text-[#112A90] border border-[#112A90] hover:bg-[#112A90] hover:text-white hover:border-white cursor-pointer w-full md:w-auto">
 							Konsultasi Sekarang
 							<FaWhatsapp className="text-md" />

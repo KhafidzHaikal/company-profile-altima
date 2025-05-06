@@ -40,7 +40,7 @@ export default function Home() {
 							Kami siap merancang perjalanan impian Anda dengan layanan terbaik
 							dan destinasi eksklusif.
 						</p>
-						<Link href={""}>
+						<Link href={"https://wa.me/6281388266868"}>
 							<Button className=" rounded-md py-4 flex items-center gap-2 mx-auto sm:mx-0 bg-transparent text-[#112A90] dark:text-white dark:hover:text-[#112A90] dark:border-white dark:hover:bg-white border border-[#112A90] hover:bg-[#112A90] hover:text-white cursor-pointer w-full md:w-auto">
 								Hubungi Kami
 								<FaWhatsapp className="text-md" />
@@ -280,7 +280,7 @@ export default function Home() {
 						dengan Sepenuh Hati.
 					</p>
 				</div>
-				<Link href={""}>
+				<Link href={"https://wa.me/6281388266868"}>
 					<Button className="rounded-md py-4 flex items-center gap-2 mx-auto bg-white text-[#112A90] border border-[#112A90] hover:bg-[#112A90] hover:text-white hover:border-white cursor-pointer w-full md:w-auto">
 						Hubungi Kami
 						<FaWhatsapp className="text-md" />
